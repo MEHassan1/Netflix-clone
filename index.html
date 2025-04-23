@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <head>
+      <!-- Add this before your stylesheet -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet"
+      />
+    </head>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -48,17 +57,44 @@
         <div class="hero">
           <!-- Background image layer -->
           <div class="hero-bg"></div>
-          
+
           <!-- Black overlay layer -->
           <div class="hero-overlay"></div>
-          
+
           <!-- Content layer (will pop above overlay) -->
           <div class="hero-content">
-            <h1><span>Unlimited movies, TV shows, and more</span></h1>
+            <h1><span>Unlimited movies, TV </span></h1>
+            <h1><span>shows, and more</span></h1>
             <p>Starts at USD 2.99. Cancel anytime.</p>
+            <div class="form_section">
+              <h3>
+                Ready to watch? Enter your email to create or restart your
+                membership.
+              </h3>
+              <!-- <form action="">
+                <label for="Email Address">Email Address</label>
+                <input
+                placeholder="Email Address"
+                  autocomplete="email"
+                  minlength="5"
+                  maxlength="50"
+                  type="email"
+                  name="email"
+                  value=""
+                />
+              </form> -->
+              <div class="email-form">
+                <input type="email" placeholder="Email address" required />
+                <button type="submit">
+                  Get Started
+                  <span class="arrow">➤</span>
+                </button>
+              </div>
+              
+            </div>
           </div>
+          
         </div>
-        
       </div>
     </div>
   </body>

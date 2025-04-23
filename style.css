@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
   padding: 0;
   margin: 0;
 }
+
+/* * {
+  font-family: Arial, sans-serif !important; /* Force basic font everywhere */
+} */
 
 .bg {
   background-color: #ccc;
@@ -65,8 +70,8 @@ nav a button {
   z-index: 2;
 } */
 
-
 .hero {
+
   margin-top: 20px;
   position: relative; /* Essential for absolute children */
   height: 70vh;
@@ -95,6 +100,7 @@ nav a button {
 }
 
 .hero-content {
+  font-family: 'Martel Sans';
   position: relative; /* Relative but will stack above absolute */
   z-index: 3; /* Top layer */
   height: 100%;
@@ -105,4 +111,74 @@ nav a button {
   color: white;
   text-align: center;
   padding: 20px;
+}
+
+.hero-content h1 span{
+  line-height: 1;
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+
+.hero-content h3 {
+  font-size: 13px;
+}
+
+.hero-content form{
+  padding: 24px 16px 8px;
+  opacity: 0.4;
+}
+
+/* form design */
+.email-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.email-form input[type="email"] {
+  padding: 14px 20px;
+  font-size: 16px;
+  border-radius: 30px;
+  border: 1px solid #999;
+  outline: none;
+  width: 300px;
+  max-width: 80%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+.email-form input::placeholder {
+  color: #ccc;
+}
+
+.email-form button {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  padding: 14px 24px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.email-form button:hover {
+  background-color: #f6121d;
+}
+
+.email-form .arrow {
+  font-size: 18px;
+  line-height: 1;
 }
