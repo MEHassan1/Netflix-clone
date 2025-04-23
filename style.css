@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.bg {
+  background-color: #ccc;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.container {
+  max-width: 1800px;
+  margin: auto;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+nav svg {
+  fill: rgb(229, 9, 20);
+}
+
+nav a button {
+  font-size: 14px;
+  padding: 7px 12px 7px 12px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+/* .hero {
+  position: relative;
+}
+
+.container .hero {
+  margin-top: 30px;
+  background: url(assets/image/newbg.jpg);
+  background-position: center center;
+  height: 70vh;
+  border-radius: 35px;
+}
+
+.container .hero .black_masking {
+  height: 70vh;
+  width: 100%;
+  background-color: black;
+  opacity: 0.6;
+  border-radius: 35px;
+}
+.black_masking {
+  position: absolute;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1;
+}
+.hero_heading {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+} */
+
+
+.hero {
+  margin-top: 20px;
+  position: relative; /* Essential for absolute children */
+  height: 70vh;
+  border-radius: 35px;
+  overflow: hidden; /* Keeps rounded corners */
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(assets/image/newbg.jpg) center/cover;
+  z-index: 1; /* Bottom layer */
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Better than opacity */
+  z-index: 2; /* Middle layer */
+}
+
+.hero-content {
+  position: relative; /* Relative but will stack above absolute */
+  z-index: 3; /* Top layer */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
