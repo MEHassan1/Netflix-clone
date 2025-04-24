@@ -94,7 +94,7 @@ nav a button {
 }
 
 .hero-content {
-  font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   position: relative; /* Relative but will stack above absolute */
   z-index: 3; /* Top layer */
   height: 100%;
@@ -179,16 +179,106 @@ nav a button {
 
 /* #card design started from here */
 
-.card_div{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.section2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   width: 80vw;
-  margin:auto ;
+  margin: auto;
   background-color: #999;
   margin-top: 30px;
 }
 
-.card_div h1{
+.card_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+
+.card_div h1 {
   font-weight: 700;
   color: rgb(255, 255, 255);
   font-size: 32px;
 }
+
+.card {
+  margin-left: 40px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 25rem;
+  width: 12rem;
+  /* margin-bottom: 10rem; delete this after completed the section */
+  margin-top: 20px;
+  position: relative;
+  border-radius: 1rem;
+}
+
+.card span {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 80px;
+  color: rgb(11, 6, 6);
+  font-weight: 900;
+  -webkit-text-stroke: 0.125rem rgb(244, 235, 235);
+}
+
+.card1 {
+  background-image: url(assets/image/card_images/1.webp);
+}
+
+.card2 {
+  background-image: url(assets/image/card_images/2.webp);
+}
+
+.card3 {
+  background-image: url(assets/image/card_images/3.webp);
+}
+
+.card4 {
+  background-image: url(assets/image/card_images/4.webp);
+}
+
+.card5 {
+  background-image: url(assets/image/card_images/5.webp);
+}
+
+.card6 {
+  background-image: url(assets/image/card_images/6.webp);
+}
+
+.card7 {
+  background-image: url(assets/image/card_images/7.webp);
+}
+
+.card8 {
+  background-image: url(assets/image/card_images/8.webp);
+}
+
+.card9 {
+  background-image: url(assets/image/card_images/9.webp);
+}
+
+.card10 {
+  background-image: url(assets/image/card_images/10.webp);
+}
+
+.spn {
+  position: absolute;
+  top: 0;
+  right: 169px;
+}
+.spn1 {
+  position: absolute;
+  top: 0;
+  right: 175px;
+}
+
+.spn10 {
+  position: absolute;
+  top: 0;
+  right: 128px;
+}
+
+/* .card_img{
+  width: 100%;
+  object-fit: ;
+} */
