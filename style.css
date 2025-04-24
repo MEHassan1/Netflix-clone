@@ -1,13 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   padding: 0;
   margin: 0;
 }
-
-/* * {
-  font-family: Arial, sans-serif !important; /* Force basic font everywhere */
-} */
-
 .bg {
   background-color: #ccc;
   min-height: 100vh;
@@ -71,7 +66,6 @@ nav a button {
 } */
 
 .hero {
-
   margin-top: 20px;
   position: relative; /* Essential for absolute children */
   height: 70vh;
@@ -100,7 +94,7 @@ nav a button {
 }
 
 .hero-content {
-  font-family: 'Martel Sans';
+  font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   position: relative; /* Relative but will stack above absolute */
   z-index: 3; /* Top layer */
   height: 100%;
@@ -113,7 +107,7 @@ nav a button {
   padding: 20px;
 }
 
-.hero-content h1 span{
+.hero-content h1 span {
   line-height: 1;
   font-size: 48px;
   font-weight: 900;
@@ -128,7 +122,7 @@ nav a button {
   font-size: 13px;
 }
 
-.hero-content form{
+.hero-content form {
   padding: 24px 16px 8px;
   opacity: 0.4;
 }
@@ -151,8 +145,8 @@ nav a button {
   outline: none;
   width: 300px;
   max-width: 80%;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
+  background-color: rgba(149, 146, 146, 0.6);
+  color: rgb(255, 255, 255);
 }
 
 .email-form input::placeholder {
@@ -181,4 +175,20 @@ nav a button {
 .email-form .arrow {
   font-size: 18px;
   line-height: 1;
+}
+
+/* #card design started from here */
+
+.card_div{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 80vw;
+  margin:auto ;
+  background-color: #999;
+  margin-top: 30px;
+}
+
+.card_div h1{
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  font-size: 32px;
 }
