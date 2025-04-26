@@ -102,7 +102,7 @@
         <!-- #card section -->
         <div class="section2">
           <h1>Tranding Now</h1>
-          <div class="card_div">
+          <!-- <div class="card_div">
             <div class="card card1">
               <span class="spn1">1</span>
             </div>
@@ -133,9 +133,48 @@
             <div class="card card10">
               <span class="spn10">10</span>
             </div>
+          </div> -->
+
+          <!-- edit the card -->
+          <div class="slider-wrapper">
+            <div class="fade-left"></div>
+
+            <div class="card-container">
+              <div class="card card1"><span>1</span></div>
+              <div class="card card2"><span>2</span></div>
+              <div class="card card3"><span>3</span></div>
+              <div class="card card4"><span>4</span></div>
+              <div class="card card5"><span>5</span></div>
+              <div class="card card6"><span>6</span></div>
+              <div class="card card7"><span>7</span></div>
+              <div class="card card8"><span>8</span></div>
+              <div class="card card9"><span>9</span></div>
+              <div class="card card10"><span>10</span></div>
+            </div>
+
+            <div class="fade-right"></div>
           </div>
+          <button type="button" onclick="slideLeft()">←</button>
+          <button type="button" onclick="slideRight()">→</button>
         </div>
       </div>
     </div>
+    <script>
+      function slideLeft() {
+        const container = document.querySelector(".card-container");
+        container.scrollBy({ left: -300, behavior: "smooth" });
+      }
+
+      function slideRight() {
+        const container = document.querySelector(".card-container");
+        container.scrollBy({ left: 300, behavior: "smooth" });
+      }
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // your scrollLeft and scrollRight functions here
+      });
+    </script>
   </body>
 </html>

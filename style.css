@@ -4,7 +4,7 @@
   margin: 0;
 }
 .bg {
-  background-color: #ccc;
+  background-color: #181717;
   min-height: 100vh;
   width: 100%;
 }
@@ -183,7 +183,7 @@ nav a button {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   width: 80vw;
   margin: auto;
-  background-color: #999;
+  /* background-color: #999; */
   margin-top: 30px;
 }
 
@@ -192,12 +192,11 @@ nav a button {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  
 }
 
-.card_div h1 {
+.section2 h1 {
   font-weight: 700;
-  color: rgb(255, 255, 255);
+  color: rgb(230, 229, 229);
   font-size: 32px;
 }
 
@@ -282,3 +281,77 @@ nav a button {
   width: 100%;
   object-fit: ;
 } */
+
+/* .card-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.card-container::-webkit-scrollbar {
+  display: none; 
+}
+
+.card {
+  flex: 0 0 auto; 
+}
+
+.scroll-buttons {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.scroll-buttons button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 18px;
+  background: #e50914;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+} */
+
+
+.slider-wrapper {
+  position: relative;
+  overflow: hidden; /* Hide overflow outside */
+  width: 100%;
+}
+
+.card-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.card-container::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  flex: 0 0 auto;
+}
+
+.fade-left, .fade-right {
+  position: absolute;
+  top: 0;
+  width: 60px;
+  height: 100%;
+  z-index: 5;
+  pointer-events: none; /* Let clicks pass through */
+}
+
+.fade-left {
+  left: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 1), transparent);
+}
+
+.fade-right {
+  right: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 1), transparent);
+}
